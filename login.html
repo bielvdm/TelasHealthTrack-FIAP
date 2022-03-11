@@ -12,47 +12,65 @@
 <body>
     <section class="banner dis spa">
         <div class="content-banner coluna spa">
-            <img src={logo} alt="Logo sp medical group" />
-            <h4>A melhor rede de clínicas médicas de SP reunidas em um único grupo</h4>
+            <img src='./img/Logo.png' alt="Logo" />
+            <h4>A melhor rede de cuidados de saúde em um único grupo</h4>
             <h4>Venha fazer parte da nossa rede</h4>
             <a href="#footer"><button>Nos contate</button></a>
         </div>
         <div class="fotobanner">
-            <img src={banner} alt="Desenho de um médico" />
+            <img src='./img/Foto Banner.png' alt="Desenho de um médico" />
         </div>
     </section>
 
 
     <section class="login dis ali spa">
 
-        <img src={fotoLogin} alt="" />
+        <img src='./img/foto login.png' alt="" />
 
-        <form onSubmit={this.funcaoLogin} class="inputs coluna spa ali">
+        <form class="inputs coluna spa ali">
             <h2>Faça seu login</h2>
             <input name="email" type="email" onChange={this.funcaoMudaState} placeholder="E-Mail" />
             <input name="senha" type="password" onChange={this.funcaoMudaState} placeholder="Senha" />
-
+            <a href="adm.html"><button type="submit">Login</button></a>
             <p>Esqueci minha senha</p>
         </form>
 
     </section>
 
+    <section class="especialidades coluna ali">
+
+        <img src="img/Logo (2).png" alt="Logo da seção especialidades">
+
+        <div class="content-especialidades dis spa ">
+
+            <img src="img/podologia.png" alt="">
+            <img src="img/cardiologia.png" alt="">
+            <img src="img/podologia.png" alt="">
+            <img src="img/cardiologia.png" alt="">
+            <img src="img/podologia.png" alt="">
+            <img src="img/cardiologia.png" alt="">
+            <img src="img/podologia.png" alt="">
+            <img src="img/cardiologia.png" alt="">
+            <img src="img/podologia.png" alt="">
+            <img src="img/cardiologia.png" alt="">
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <script src="js/script.js"></script>
+
     <footer id="footer" class="dis ali spaa">
 
         <h4>A melhor rede de clínicas médicas de SP reunidas em um único grupo</h4>
 
-        <img class="logoFooter" src={logo} alt="logo do sp medical group" />
+        <img class="logoFooter" src='./img/Logo.png' alt="logo" />
 
         <div class="contato coluna spa">
             <h5>Como nos contatar?</h5>
-            <div class="contatos dis">
-                <img src={telefone} alt="" />
-                <p>(11) 4002-8922</p>
-            </div>
-            <div class="contatos dis">
-                <img src={instagram} alt="" />
-                <p>@spmedicalgroup</p>
-            </div>
+            <p>(11) 4002-8922</p>
+            <p>@healthytrack</p>
         </div>
     </footer>
 
